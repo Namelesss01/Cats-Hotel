@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Rubik:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../scss/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__line">
+          <div class="header__logo">
+            <a class="logo__link" href="../index.html">
+              <img class="logo__image" src="../img/log.svg" alt="koteika" />
+            </a>
+          </div>
+          <nav class="nav">
+            <ul class="nav__ul">
+              <li class="nav__li">
+                <a class="nav__item" href="../index.html">Почему мы?</a>
+              </li>
+              <li class="nav__li">
+                <a class="nav__item" href="../pages/cat.html">Номера</a>
+              </li>
+              <li class="nav__li">
+                <a class="nav__item" href="../pages/catalog.html">Отзывы</a>
+              </li>
+              <li class="nav__li">
+                <a class="nav__item" href="../pages/catalog.html"
+                  >Как нас найти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="burger">
+            <span class="burger__span"></span>
+            <span class="burger__span"></span>
+            <span class="burger__span"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="popup">
+      <div class="popup-content">
+        <ul class="nav__ul">
+          <li class="nav__li">
+            <a class="nav__item" href="../index.html">Почему мы?</a>
+          </li>
+          <li class="nav__li">
+            <a class="nav__item" href="../pages/catalog.html">Номера</a>
+          </li>
+          <li class="nav__li">
+            <a class="nav__item" href="../pages/cat.html">Отзывы</a>
+          </li>
+          <li class="nav__li">
+            <a class="nav__item" href="../pages/catalog.html">Как нас найти</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="catalog">
+      <div class="container">
+        <div class="catalog__top">
+          <h2 class="catalog__title">Наши номера</h2>
+          <button class="catalog__button button">
+            <img src="../img/top-bot.svg" alt="arrow" />
+            По площади
+            <div class="arrow"></div>
+            <ul id="drop" class="drop">
+              <li id="list">
+                <img class="button__img" src="../img/bottom.svg" alt="arrow" />
+                По площади
+              </li>
+
+              <li id="list">
+                <img class="button__img" src="../img/top-bot.svg" alt="arrow" />
+                По цене
+              </li>
+
+              <li id="list">
+                <img class="button__img" src="../img/bottom.svg" alt="arrow" />
+                По цене
+              </li>
+            </ul>
+          </button>
+          <button class="catalog__filter-btn">
+            <img
+              class="catalog__filter-ic"
+              src="../img/filter.svg"
+              alt="filter"
+            />Фильтр
+          </button>
+        </div>
+        <div class="catalog__cenrt">
+          <aside class="catalog__aside">
+            <div class="catalog__aside-col">
+              <p class="catalog__filter-price">Цена за сутки ₽</p>
+              <input class="catalog__search" placeholder="от 100" type="text" />
+              <input class="catalog__search" placeholder="до 900" type="text" />
+              <p class="catalog__filter-yard">Площадь</p>
+              <div class="catalog__check">
+                <div class="catalog__check-el">
+                  <input
+                    class="custom-checkbox"
+                    id="myCheckbox"
+                    type="checkbox"
+                  />
+                  <label for="myCheckbox"> 0,63 м2 </label>
+                </div>
+
+                <div class="catalog__check-el">
+                  <input
+                    class="custom-checkbox"
+                    id="myCheckbox"
+                    type="checkbox"
+                  />
+                  <label for="myCheckbox"> 0,63 м2 </label>
+                </div>
+
+                <div class="catalog__check-el">
+                  <input
+                    class="custom-checkbox"
+                    id="myCheckbox"
+                    type="checkbox"
+                  />
+                  <label for="myCheckbox"> 0,90 м2 </label>
+                </div>
+
+                <div class="catalog__check-el">
+                  <input
+                    class="custom-checkbox"
+                    id="myCheckbox"
+                    type="checkbox"
+                  />
+                  <label for="myCheckbox"> 1,13 м2 </label>
+                </div>
+
+                <div class="catalog__check-el">
+                  <input
+                    class="custom-checkbox"
+                    id="myCheckbox"
+                    type="checkbox"
+                  />
+                  <label for="myCheckbox"> 1,56 м2 </label>
+                </div>
+
+                <div class="catalog__check-el">
+                  <input
+                    class="custom-checkbox"
+                    id="myCheckbox"
+                    type="checkbox"
+                  />
+                  <label for="myCheckbox"> 2,56 м2 </label>
+                </div>
+
+                <div class="catalog__check-el">
+                  <input
+                    class="custom-checkbox"
+                    id="myCheckbox"
+                    type="checkbox"
+                  />
+                  <label for="myCheckbox"> 2,88 м2 </label>
+                </div>
+              </div>
+
+              <p class="catalog__filter-yard">Оснащение номера</p>
+              <div class="catalog__check-sec">
+                <div class="catalog__check-el">
+                  <input
+                    class="custom-checkbox"
+                    id="myCheckbox"
+                    type="checkbox"
+                  />
+                  <label for="myCheckbox">Пустой номер </label>
+                </div>
+
+                <div class="catalog__check-el">
+                  <input
+                    class="custom-checkbox"
+                    id="myCheckbox"
+                    type="checkbox"
+                  />
+                  <label for="myCheckbox"> Лежак </label>
+                </div>
+
+                <div class="catalog__check-el">
+                  <input
+                    class="custom-checkbox"
+                    id="myCheckbox"
+                    type="checkbox"
+                  />
+                  <label for="myCheckbox"> Когтеточка </label>
+                </div>
+
+                <div class="catalog__check-el">
+                  <input
+                    class="custom-checkbox"
+                    id="myCheckbox"
+                    type="checkbox"
+                  />
+                  <label for="myCheckbox"> Игровой-комплекс </label>
+                </div>
+
+                <div class="catalog__check-el">
+                  <input
+                    class="custom-checkbox"
+                    id="myCheckbox"
+                    type="checkbox"
+                  />
+                  <label for="myCheckbox"> Домик </label>
+                </div>
+              </div>
+
+              <button class="catalog__btn-cr">Сбросить фильтр</button>
+            </div>
+          </aside>
+
+          <div class="catalog__rows">
+            <div class="catalog__row">
+              <div class="catalog__el">
+                <img
+                  class="catalog__image"
+                  src="../img/economy.png"
+                  alt="economy"
+                />
+                <h3 class="catalog__subtitle">Эконом</h3>
+                <p class="catalog__txt">Размеры (ШхГхВ) - 90х70х180 см</p>
+                <p class="catalog__txt">Площадь - 0,63 м2</p>
+                <p class="catalog__txt">
+                  Оснащение номера
+                  <img
+                    class="catalog__no-icon"
+                    src="../img/no-icon.svg"
+                    alt=""
+                  />
+                </p>
+                <p class="catalog__txt">
+                  Цена за сутки: <span class="catalog__price">100₽</span>
+                </p>
+
+                <button id="btn" class="reg-btn">
+                  Забронировать<img
+                    class="paw"
+                    src="../img/paw.svg"
+                    alt="paw"
+                  />
+                </button>
+              </div>
+
+              <div class="catalog__el">
+                <img
+                  class="catalog__image"
+                  src="../img/economy+.png"
+                  alt="economy"
+                />
+                <h3 class="catalog__subtitle">Эконом</h3>
+                <p class="catalog__txt">Размеры (ШхГхВ) - 90х70х180 см</p>
+                <p class="catalog__txt">Площадь - 0,90 м2</p>
+                <p class="catalog__txt">
+                  Оснащение номера
+                  <img class="catalog__no-icon" src="../img/lotok.svg" alt="" />
+                </p>
+                <p class="catalog__txt">
+                  Цена за сутки: <span class="catalog__price">200₽</span>
+                </p>
+
+                <button id="btn" class="reg-btn">
+                  Забронировать<img
+                    class="paw"
+                    src="../img/paw.svg"
+                    alt="paw"
+                  />
+                </button>
+              </div>
+
+              <div class="catalog__el">
+                <img
+                  class="catalog__image"
+                  src="../img/suite.png"
+                  alt="economy"
+                />
+                <h3 class="catalog__subtitle">Эконом</h3>
+                <p class="catalog__txt">Размеры (ШхГхВ) - 90х70х180 см</p>
+                <p class="catalog__txt">Площадь - 1,13 м2</p>
+                <p class="catalog__txt">
+                  Оснащение номера
+                  <img class="catalog__no-icon" src="../img/lotok.svg" alt="" />
+                  <img class="catalog__no-icon" src="../img/toy.svg" alt="" />
+                  <img class="catalog__no-icon" src="../img/ball.svg" alt="" />
+                </p>
+
+                <p class="catalog__txt">
+                  Цена за сутки: <span class="catalog__price">250₽</span>
+                </p>
+
+                <button id="btn" class="reg-btn">
+                  Забронировать<img
+                    class="paw"
+                    src="../img/paw.svg"
+                    alt="paw"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="catalog__row">
+              <div class="catalog__el">
+                <img
+                  class="catalog__image"
+                  src="../img//comfort.png"
+                  alt="economy"
+                />
+
+                <h3 class="catalog__subtitle">Эконом</h3>
+                <p class="catalog__txt">Размеры (ШхГхВ) - 90х70х180 см</p>
+                <p class="catalog__txt">Площадь - 1,56 м2</p>
+                <p class="catalog__txt">
+                  Оснащение номера
+                  <img class="catalog__no-icon" src="../img/lotok.svg" alt="" />
+                  <img class="catalog__no-icon" src="../img/toy.svg" alt="" />
+                  <img class="catalog__no-icon" src="../img/ball.svg" alt="" />
+                </p>
+
+                <p class="catalog__txt">
+                  Цена за сутки: <span class="catalog__price">350₽</span>
+                </p>
+
+                <button id="btn" class="reg-btn">
+                  Забронировать<img
+                    class="paw"
+                    src="../img/paw.svg"
+                    alt="paw"
+                  />
+                </button>
+              </div>
+
+              <div class="catalog__el">
+                <img
+                  class="catalog__image"
+                  src="../img/luxury.png"
+                  alt="economy"
+                />
+                <h3 class="catalog__subtitle">Эконом</h3>
+                <p class="catalog__txt">Размеры (ШхГхВ) - 90х70х180 см</p>
+                <p class="catalog__txt">Площадь - 2,56 м2</p>
+                <p class="catalog__txt">
+                  Оснащение номера
+                  <img class="catalog__no-icon" src="../img/lotok.svg" alt="" />
+                  <img class="catalog__no-icon" src="../img/toy.svg" alt="" />
+                  <img class="catalog__no-icon" src="../img/ball.svg" alt="" />
+                  <img class="catalog__no-icon" src="../img/home.svg" alt="" />
+                </p>
+
+                <p class="catalog__txt">
+                  Цена за сутки: <span class="catalog__price">500₽</span>
+                </p>
+
+                <button id="btn" class="reg-btn">
+                  Забронировать<img
+                    class="paw"
+                    src="../img/paw.svg"
+                    alt="paw"
+                  />
+                </button>
+              </div>
+
+              <div class="catalog__el">
+                <img
+                  class="catalog__image"
+                  src="../img/super-luxury.png"
+                  alt="economy"
+                />
+                <h3 class="catalog__subtitle">Эконом</h3>
+                <p class="catalog__txt">Размеры (ШхГхВ) - 90х70х180 см</p>
+                <p class="catalog__txt">Площадь - 2,88 м2</p>
+                <p class="catalog__txt">
+                  Оснащение номера
+                  <img class="catalog__no-icon" src="../img/lotok.svg" alt="" />
+                  <img class="catalog__no-icon" src="../img/toy.svg" alt="" />
+                  <img class="catalog__no-icon" src="../img/ball.svg" alt="" />
+                  <img class="catalog__no-icon" src="../img/home.svg" alt="" />
+                </p>
+
+                <p class="catalog__txt">
+                  Цена за сутки: <span class="catalog__price">600₽</span>
+                </p>
+
+                <button id="btn" class="reg-btn">
+                  Забронировать<img
+                    class="paw"
+                    src="../img/paw.svg"
+                    alt="paw"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="popup" class="popup">
+          <h3 class="popup-title">Забронировать номер</h3>
+          <div class="input-top">
+            <input class="input" placeholder="Ваше имя" type="text" />
+            <input class="input" placeholder="Имя Питомца" type="text" />
+            <input class="input" placeholder="Телефон" type="text" />
+            <input class="input" placeholder="E-mail" type="text" />
+            <img class="pop-paw" src="../img/paw-pop.png" alt="paw" />
+          </div>
+
+          <div class="date-input">
+            <pre> Дата заезда   c</pre>
+
+            <input class="input-min" type="text" placeholder="26.01.2020" />
+            <span>по</span>
+            <input class="input-min" type="text" placeholder="26.01.2020" />
+          </div>
+
+          <!-- <button  class="reg-btn">
+            Забронировать<img class="paw" src="../img/paw.svg" alt="paw" />
+          </button> -->
+        </div>
+        <div class="overlay"></div>
+
+        <div class="catalog__banner">
+          <img class="catalog__ban-img" src="../img/banner.png" alt="" />
+          <h2 class="catalog__free-title">Каждый 7-й день</h2>
+          <p class="catalog__free-subtitle">бесплатно!</p>
+          <p class="catalog__free-txt">
+            Акция действует при размещении <br />
+            в номерах “Люкс” и “Супер-Люкс”
+          </p>
+          <div class="catalog__btn-cont">
+            <button class="reg-btn-w">
+              Забронировать<img
+                class="paw-w"
+                src="../img/paw-w.svg"
+                alt="paw"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__cont">
+          <div class="footer__left">
+            <h2 class="footer__title">Как нас найти</h2>
+            <p class="footer__bold">Адрес:</p>
+            <p class="footer__light">
+              Санкт-Петербург, <br />
+              ул. Большая Конюшенная, д. 1Б
+            </p>
+
+            <p class="footer__bold">Режим работы</p>
+            <p class="footer__light">Ежедневно, с 9:00 до 20:00</p>
+
+            <p class="footer__bold">Телефон:</p>
+            <p class="footer__light">8-800-333-55-99</p>
+
+            <p class="footer__bold">Email:</p>
+            <p class="footer__light">info@cat-hotel.ru</p>
+
+            <p class="footer__bold">Социальные сети</p>
+            <div class="footer__icons">
+              <a href="#">
+                <img
+                  class="footer__img"
+                  src="../img/facebook.svg"
+                  alt="facebook"
+                />
+              </a>
+
+              <a href="#">
+                <img
+                  class="footer__img"
+                  src="../img/instagram.svg"
+                  alt="instagram"
+                />
+              </a>
+
+              <a href="#">
+                <img class="footer__img" src="../img/vk.svg" alt="vk" />
+              </a>
+            </div>
+          </div>
+          <div id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.164697441527!2d30.320618051903477!3d59.93907219646582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2skg!4v1718904761752!5m2!1sru!2skg"
+              width="200%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="navig">
+          <div class="header__line">
+            <div class="header__logo">
+              <a class="logo__link" href="../index.html">
+                <img class="logo__image" src="../img/logo.svg" alt="koteika" />
+              </a>
+            </div>
+            <div class="nav">
+              <ul class="nav__ul">
+                <li class="nav__li">
+                  <a class="nav__item">Почему мы?</a>
+                </li>
+                <li class="nav__li">
+                  <a class="nav__item">Номера</a>
+                </li>
+                <li class="nav__li">
+                  <a class="nav__item">Отзывы</a>
+                </li>
+                <li class="nav__li">
+                  <a class="nav__item">Как нас найти</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="footer__line" />
+          <div class="footer__bottom">
+            <p class="footer__txt">2024 Все права защищены</p>
+            <a class="footer__confidencial" href="">
+              Политика конфиденциальности
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+    <script>
+      const burger = document.querySelector(".burger");
+      const popup = document.querySelector(".popup");
+
+      burger.addEventListener("click", () => {
+        if (burger.classList.contains("active")) {
+          // Если бургер в виде крестика, закрываем popup
+          burger.classList.remove("active");
+          popup.style.display = "none";
+        } else {
+          // Если бургер в обычном виде, открываем popup
+          burger.classList.add("active");
+          popup.style.display = "block";
+        }
+      });
+    </script>
+
+    <!-- <script>
+      const burger = document.querySelector(".burger");
+      const popup = document.querySelector(".popup");
+
+      burger.addEventListener("click", () => {
+        if (burger.classList.contains("active")) {
+          // Если бургер в виде крестика, закрываем popup
+          burger.classList.remove("active");
+          popup.style.display = "none";
+        } else {
+          // Если бургер в обычном виде, открываем popup
+          burger.classList.add("active");
+          popup.style.display = "block";
+        }
+      });
+    </script> -->
+  </body>
+</html>

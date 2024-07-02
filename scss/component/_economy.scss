@@ -1,0 +1,130 @@
+.economy {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  &__title {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .reg-btn {
+    position: relative;
+    margin: 30px 20px;
+    border: none;
+    color: $text-white;
+    border-radius: 55px;
+    background-color: $bg-btn;
+    padding: 17px 80px 18px 50px;
+  }
+
+  .paw {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+  &__vector {
+    margin: 10px 3px 5px 15px;
+    padding: 10px;
+    background-color: $bg-white;
+    border-radius: 90px;
+  }
+
+  &__img {
+    margin-left: 168px;
+  }
+  .swiper-slide {
+    display: flex;
+    margin-bottom: 79px;
+  }
+
+  .swiper-pagination {
+    position: relative;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: $bg-orange;
+  }
+}
+
+.card {
+  margin-left: 100px;
+  background-color: $bg-white;
+  border-radius: 8px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: -80px;
+  &__info {
+    margin: 40px 117px 40px 100px;
+  }
+
+  &__item {
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    &::marker {
+      color: $bg-orange;
+      font-size: 25px;
+    }
+  }
+}
+
+.swiper-button-next {
+  margin-top: 200px;
+  right: 150px;
+  position: absolute;
+  background-color: $background-white;
+  box-shadow: 0 2px 7px 0 $text-gray;
+
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+
+  &::after {
+    font-weight: 900;
+    font-size: 14px;
+    background-color: $bg-white;
+    color: $bg-btn;
+  }
+}
+
+.swiper-button-prev {
+  position: absolute;
+  margin-top: 200px;
+  left: 1200px;
+  width: 36px;
+  height: 36px;
+  background-color: $background-white;
+  box-shadow: 0 2px 7px 0 $text-gray;
+  border-radius: 50%;
+
+  &::after {
+    font-weight: 900;
+    font-size: 14px;
+    background-color: $bg-white;
+    color: $bg-btn;
+  }
+}
+
+.economy {
+  @media screen and (max-width: 560px) {
+    .swiper-button-next {
+      display: none;
+    }
+    .swiper-button-prev {
+      display: none;
+    }
+    .swiper-slide {
+      display: inline;
+      margin: 0;
+    }
+
+    &__img {
+      margin-left: 0px;
+    }
+
+    &__button {
+      display: flex;
+      border-radius: 30px;
+      padding-left: 20px;
+    }
+  }
+}

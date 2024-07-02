@@ -1,0 +1,163 @@
+@import "./vendors/reset";
+@import "./viraibles";
+
+@import "./component/typografy";
+@import "../scss/component/header";
+@import "./component/footer";
+@import "./component/economy";
+
+@import "./sections/hero";
+@import "./sections/lux";
+
+@import "./sections/catalog";
+@import "./sections/main-hero";
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+@media screen and (max-width: 560px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+.reg-btn {
+  display: flex;
+  align-items: center;
+  margin: 18px 20px;
+  border: none;
+  color: $text-white;
+  border-radius: 55px;
+  background-color: $bg-btn;
+  padding: 17px 80px 18px 30px;
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+.reg-btn-w {
+  display: flex;
+  align-items: center;
+  border: none;
+  color: $text-black;
+  border-radius: 45px;
+  background-color: $bg-white;
+  padding: 10px 10px 10px 50px;
+
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+.paw {
+  margin-left: 20px;
+}
+
+.paw-w {
+  margin-left: 40px;
+}
+
+.button {
+  cursor: pointer;
+  z-index: 2;
+}
+
+.arrow {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid $text-black;
+  border-right: 2px solid $text-black;
+  right: 20px;
+  top: 18px;
+  transform: rotate(-45deg);
+}
+
+.nav__ul {
+  display: flex;
+}
+
+.nav__li {
+  display: flex;
+  padding-right: 30px;
+  &:last-child {
+    padding: 0;
+  }
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup.active + .overlay {
+  display: block;
+}
+
+.popup {
+  background-color: $bg-white;
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  width: 570px;
+  height: 649px;
+  margin: auto;
+  border: 2px solid $border-white;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.popup-title {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.input-top {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 20px;
+}
+
+.input {
+  justify-content: center;
+  border: 1px solid $input-border;
+  margin: 20px 70px;
+  border-radius: 25px;
+  padding: 20px 230px 20px 30px;
+}
+
+.input-min {
+  margin: 0 16px 0 10px;
+  width: 90px;
+  border: 1px solid $input-border;
+  padding: 20px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+.pop-paw {
+  top: 0;
+
+  position: absolute;
+  width: 127px;
+  height: 117px;
+}
+
+.date-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

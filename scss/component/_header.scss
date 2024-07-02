@@ -1,0 +1,136 @@
+.header {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  margin-left: 60px;
+}
+
+.nav {
+  display: flex; /* Показать навигацию по умолчанию */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__ul {
+  display: flex; /* Показать навигацию по умолчанию */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__li {
+  margin-left: 20px;
+}
+
+.nav__item {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none; /* Скрыть бургер по умолчанию */
+}
+
+.burger__span {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Стиль бургера, когда он активен (в виде крестика) */
+.burger.active .burger__span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active .burger__span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active .burger__span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.popup {
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  width: 570px;
+  margin: auto;
+  border: 2px solid #e1e1e1;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+/* Адаптивный режим для мобильных устройств */
+@media (max-width: 768px) {
+  /* Изменить на нужный размер экрана */
+  .nav {
+    display: none; /* Скрыть навигацию на мобильных */
+  }
+
+  .header {
+    margin-bottom: 0;
+  }
+
+  .header__logo {
+    margin-left: 0px;
+  }
+
+  .burger {
+    display: flex; /* Показывать бургер на мобильных */
+  }
+
+  .popup {
+    width: 80%; /* Занимает 80% ширины экрана */
+    max-width: 300px; /* Максимальная ширина */
+  }
+  .nav__ul {
+    flex-direction: column;
+    line-height: 4;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Изменить на нужный размер экрана */
+  .burger {
+    display: none; /* Скрыть бургер на больших экранах */
+  }
+
+  .popup {
+    display: none; /* Скрыть поп-ап на больших экранах */
+  }
+}
