@@ -812,6 +812,9 @@ h4 {
   position: relative;
   margin-top: 140px;
 }
+.catalog__ban-img {
+  width: 1440px;
+}
 .catalog__free-title {
   font-family: "Rubik", sans-serif;
   position: absolute;
@@ -979,6 +982,7 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
+  min-height: 100vh;
 }
 .hero__content {
   margin-left: 200px;
